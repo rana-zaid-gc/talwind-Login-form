@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
+
 </head>
 
 <body>
@@ -17,19 +18,50 @@
 
             <!-- login form  -->
 
-            <div class="bg-white w-1/2">
+            <div class="bg-white sm:w-1/2">
+
+
+
                 <div class=" flex flex-col items-center mt-16">
                     <h1 class="text-3xl font-bold ">Welcome!</h1>
                     <p class=" text-sm mt-3">please log into your account</p>
                 </div>
 
-                <form class="flex flex-col gap-4 items-center" action="">
-                    <input class="p-2 mt-8  rounded-md border bg-slate-300 w-80" type="text" name="email"
-                        placeholder=" Your Email">
-                    <input class="p-2 rounded-md border  bg-slate-300 w-80" type="password" name="password"
-                        placeholder="Password">
-                    <p class="text-sm ml-48">Forget Password</p>
-                    <button class="text-orange-600 border-orange-600 rounded-md border-2 w-32 p-2">Login</button>
+
+
+
+                <form class="flex flex-col gap-4 items-center relative" action="">
+
+                      <!-- your email login  -->
+
+
+                    <div class="p-2 mt-8  rounded-md border bg-slate-300 w-80 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope absolute mt-1 text-gray-400  " viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                        <input class="border-transparent outline-none  bg-transparent ml-5  " type="text" name="email"
+                            placeholder=" Your Email">
+                    </div>
+
+                   <!-- your password  -->
+
+                    <div class="p-2   rounded-md border bg-slate-300 w-80 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-fill absolute mt-1  text-gray-400 " viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                        <input class="border-transparent outline-none  bg-transparent ml-5" type="password"
+                            name="password" placeholder="Password">
+                    </div>
+
+
+                    <p class="text-sm ml-48 cursor-pointer">Forget Password</p>
+
+                    <!-- login button  -->
+                    <button
+                        class="text-orange-600 border-orange-600 rounded-md border-2 w-32 p-2 cursor-pointer ">Login</button>
                 </form>
 
                 <div class="mt-10 flex flex-row items-center justify-center text-gray-400 ">
@@ -37,14 +69,16 @@
                     <p class="text-center text-sm px-4">or continue with</p>
                     <hr class="border-gray-400 w-24">
                 </div>
-
+                   <!-- google icon  -->
                 <div class="mt-5 flex justify-center">
-                    <img class="" src="icons8-google-48.png" alt="">
+                    <img class="cursor-pointer" src="icons8-google-48.png" alt="">
                 </div>
 
+
+
                 <div class="mt-4 flex flex-row justify-center mb-20">
-                  <p>don't have a acount?</p>
-                  <p class="text-orange-500 px-4 ">sign up</p>
+                    <p class="text-gray-400">don't have a acount?</p>
+                    <p class="text-orange-500 px-4 cursor-pointer ">sign up</p>
 
                 </div>
 
@@ -53,7 +87,7 @@
             <!-- image  -->
 
 
-            <div class="bg-blue-400 w-1/2 p-5">
+            <div class="bg-blue-400 w-1/2 p-5 sm:block hidden">
                 <img src="Group 5718.png" alt="">
             </div>
 
